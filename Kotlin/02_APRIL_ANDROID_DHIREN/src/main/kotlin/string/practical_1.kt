@@ -1,0 +1,6 @@
+package string
+
+fun main()
+{
+
+}

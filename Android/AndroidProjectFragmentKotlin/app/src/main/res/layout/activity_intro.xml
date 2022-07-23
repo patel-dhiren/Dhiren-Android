@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.IntroActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_skip"
+        android:layout_gravity="right"
+        android:textColor="@color/black"
+        android:text="Skip"
+        android:gravity="right"
+        android:textAllCaps="false"
+        app:iconSize="20sp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/indicator_dots"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:text="Next"
+            android:textAllCaps="false"
+            app:icon="@drawable/ic_baseline_arrow_forward_24"
+            app:iconTint="@color/white"
+            app:backgroundTint="#1E88E5"
+            android:layout_marginRight="10dp"
+            app:iconGravity="end"
+            app:iconSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</FrameLayout>
